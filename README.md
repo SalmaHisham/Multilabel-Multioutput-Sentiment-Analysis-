@@ -18,6 +18,10 @@ The dataset used in this project can be accessed through the Kaggle link [Link t
 ## Emotions Extraction Challenge
 In this step, we utilized the Hugging Face model SamLowe/roberta-base-go_emotions for emotion extraction. This model is based on the Roberta architecture and has been trained on the go_emotions dataset.
 
+![Screenshot from 2024-01-17 12-23-08](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/e9b9b53c-bd0c-4488-9d44-c7377b97179b)
+
+
+
 ## Preparations
 
 Before applying the emotion extraction model, the data went through a cleaning process to ensure its quality.
