@@ -63,14 +63,15 @@ The evaluation metric used in this experiment is the weighted F1 score, which is
 The diagram above illustrates the concept of multi-output classification, where multiple dependent variables are predicted simultaneously.
 
 ## First Model: MultiOutputClassifier
-![446a1cde-7859-44d1-b320-f457b105b8d0](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/8f6291c7-4d72-4fec-8fe4-7dc751a7eff1)
+
+![446a1cde-7859-44d1-b320-f457b105b8d0](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/224e17c2-4f66-4c3c-a149-5d84c3935552)
 
 The first model employed in this project is the MultiOutputClassifier, which is capable of handling multi-label multi-output classification tasks.
 A multi-output classifier is a type of classifier that can predict multiple target variables simultaneously. We use a RandomForestClassifier as the base estimator for the MultiOutputClassifier. We combine the target arrays into a single 2D array using np.column_stack and fit the multi_output_clf classifier with the combined target array and scaled training features. The MultiOutputClassifier internally trains separate models for each target variable and can parallelize the training process if supported.
 
 
 
-## Second Model: 
+## Second Model: Chain Classifier
 ![1_ycwr_uE8_5lnOMNCnFOuXQ](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/855c6533-e7f9-4933-bd6e-4b7627ae8f27)
 
 The second model used in this project is shown in the provided image. Unfortunately, the direct source of the image could not be accessed or described further.
