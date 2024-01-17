@@ -52,11 +52,12 @@ The diagram above illustrates the concept of multi-output classification, where 
 
 ## First Model: MultiOutputClassifier
 
+![Image description](/home/norhan/Pictures/Screenshots/Screenshot from 2024-01-17 11-37-35.png)
 
 The first model employed in this project is the MultiOutputClassifier, which is capable of handling multi-label multi-output classification tasks.
 
-## Second Model: [Model Image Link](https://miro.medium.com/v2/resize:fit:2000/1*ycwr_uE8_5lnOMNCnFOuXQ.png)
-
+## Second Model: 
+[Model Image Link](https://miro.medium.com/v2/resize:fit:2000/1*ycwr_uE8_5lnOMNCnFOuXQ.png)
 The second model used in this project is shown in the provided image. Unfortunately, the direct source of the image could not be accessed or described further.
 
 ## Comparison of Results
