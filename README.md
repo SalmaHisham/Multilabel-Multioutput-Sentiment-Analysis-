@@ -12,10 +12,15 @@ Our main focus is to compare the following two strategies:
 
 ## Dataset
 
-The dataset used in this project can be accessed through the Kaggle link here. It consists of Amazon product reviews and focuses on two labels: positive and negative sentiment.
+The dataset used in this project can be accessed through the Kaggle link [Link text]([https://example.com](https://www.kaggle.com/dataset))
+. It consists of Amazon product reviews and focuses on two labels: positive and negative sentiment.
 
 ## Emotions Extraction Challenge
 In this step, we utilized the Hugging Face model SamLowe/roberta-base-go_emotions for emotion extraction. This model is based on the Roberta architecture and has been trained on the go_emotions dataset.
+
+![Screenshot from 2024-01-17 12-23-08](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/e9b9b53c-bd0c-4488-9d44-c7377b97179b)
+
+
 
 ## Preparations
 
@@ -34,6 +39,13 @@ The data was prepared for the models through vectorization, standardization, and
 To optimize the clustering process, we employed various techniques. First, we visualized the dendrogram, which helped us determine the best number of clusters. Additionally, we calculated the silhouette score, which further aided in identifying the optimal number of clusters. Finally, we utilized the k-means clustering algorithm to perform the clustering based on the determined number of clusters.
 
 
+![Screenshot from 2024-01-17 12-18-22](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/ee978002-ab00-47de-9eb2-1a3e1dc7207c)
+
+![Screenshot from 2024-01-17 12-17-42](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/a4cdf3e2-925a-44a9-b1ba-71bcc5509f3a)
+
+The following plotting shows the emotions after doing K-means Clustering
+![Screenshot from 2024-01-17 12-19-10](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/7a78f281-211c-438a-9e97-2e6da828c117)
+
 
 ## Model Steps
 
@@ -51,13 +63,16 @@ The evaluation metric used in this experiment is the weighted F1 score, which is
 The diagram above illustrates the concept of multi-output classification, where multiple dependent variables are predicted simultaneously.
 
 ## First Model: MultiOutputClassifier
-
-![Image description](/home/norhan/Pictures/Screenshots/Screenshot from 2024-01-17 11-37-35.png)
+![446a1cde-7859-44d1-b320-f457b105b8d0](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/8f6291c7-4d72-4fec-8fe4-7dc751a7eff1)
 
 The first model employed in this project is the MultiOutputClassifier, which is capable of handling multi-label multi-output classification tasks.
+A multi-output classifier is a type of classifier that can predict multiple target variables simultaneously. We use a RandomForestClassifier as the base estimator for the MultiOutputClassifier. We combine the target arrays into a single 2D array using np.column_stack and fit the multi_output_clf classifier with the combined target array and scaled training features. The MultiOutputClassifier internally trains separate models for each target variable and can parallelize the training process if supported.
+
+
 
 ## Second Model: 
-[Model Image Link](https://miro.medium.com/v2/resize:fit:2000/1*ycwr_uE8_5lnOMNCnFOuXQ.png)
+![1_ycwr_uE8_5lnOMNCnFOuXQ](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/855c6533-e7f9-4933-bd6e-4b7627ae8f27)
+
 The second model used in this project is shown in the provided image. Unfortunately, the direct source of the image could not be accessed or described further.
 
 ## Comparison of Results
