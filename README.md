@@ -12,7 +12,8 @@ Our main focus is to compare the following two strategies:
 
 ## Dataset
 
-The dataset used in this project can be accessed through the Kaggle link here. It consists of Amazon product reviews and focuses on two labels: positive and negative sentiment.
+The dataset used in this project can be accessed through the Kaggle link [Link text]([https://example.com](https://www.kaggle.com/dataset))
+. It consists of Amazon product reviews and focuses on two labels: positive and negative sentiment.
 
 ## Emotions Extraction Challenge
 In this step, we utilized the Hugging Face model SamLowe/roberta-base-go_emotions for emotion extraction. This model is based on the Roberta architecture and has been trained on the go_emotions dataset.
@@ -51,13 +52,14 @@ The evaluation metric used in this experiment is the weighted F1 score, which is
 The diagram above illustrates the concept of multi-output classification, where multiple dependent variables are predicted simultaneously.
 
 ## First Model: MultiOutputClassifier
+![Screenshot from 2024-01-17 11-37-35](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/b175ab75-3d15-426f-9103-1ab04c874d02)
 
-![Image description](/home/norhan/Pictures/Screenshots/Screenshot from 2024-01-17 11-37-35.png)
 
 The first model employed in this project is the MultiOutputClassifier, which is capable of handling multi-label multi-output classification tasks.
 
 ## Second Model: 
-[Model Image Link](https://miro.medium.com/v2/resize:fit:2000/1*ycwr_uE8_5lnOMNCnFOuXQ.png)
+![1_ycwr_uE8_5lnOMNCnFOuXQ](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/855c6533-e7f9-4933-bd6e-4b7627ae8f27)
+
 The second model used in this project is shown in the provided image. Unfortunately, the direct source of the image could not be accessed or described further.
 
 ## Comparison of Results
