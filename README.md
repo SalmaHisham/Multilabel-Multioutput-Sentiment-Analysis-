@@ -79,6 +79,7 @@ The second model used in this project is shown in the provided image. Unfortunat
 ## Comparison of Results
 
 The results obtained from emotions extracted using the Hugging Face model and the emotions obtained from clustering were compared to evaluate their effectiveness in extracting emotions from text.
+
 `Modeling Comparison Without Class Reduction (Y2 = 13 Classes)`
  |       Models               | Y1           | Y2          | AVG        |
  |-------------------         |-------       |-------      |-------     |
