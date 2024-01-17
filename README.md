@@ -1,4 +1,4 @@
-![446a1cde-7859-44d1-b320-f457b105b8d0](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/8f6291c7-4d72-4fec-8fe4-7dc751a7eff1)# Multilabel-Multioutput Sentiment Analysis 
+# Multilabel-Multioutput Sentiment Analysis 
 
 The aim of this project is to perform a comparison rather than fine-tuning. To facilitate the comparison, we will utilize the RandomForestClassifier as the base model for all our experiments, using its default parameter values.
 
@@ -59,8 +59,7 @@ The evaluation metric used in this experiment is the weighted F1 score, which is
 The diagram above illustrates the concept of multi-output classification, where multiple dependent variables are predicted simultaneously.
 
 ## First Model: MultiOutputClassifier
-    ![446a1cde-7859-44d1-b320-f457b105b8d0](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/46100b65-8ba6-4036-90ec-08411ecc9b3f)
-
+![446a1cde-7859-44d1-b320-f457b105b8d0](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/8f6291c7-4d72-4fec-8fe4-7dc751a7eff1)
 
 The first model employed in this project is the MultiOutputClassifier, which is capable of handling multi-label multi-output classification tasks.
 A multi-output classifier is a type of classifier that can predict multiple target variables simultaneously. We use a RandomForestClassifier as the base estimator for the MultiOutputClassifier. We combine the target arrays into a single 2D array using np.column_stack and fit the multi_output_clf classifier with the combined target array and scaled training features. The MultiOutputClassifier internally trains separate models for each target variable and can parallelize the training process if supported.
