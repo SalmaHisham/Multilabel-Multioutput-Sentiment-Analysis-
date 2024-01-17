@@ -74,7 +74,8 @@ A multi-output classifier is a type of classifier that can predict multiple targ
 ## Second Model: Chain Classifier
 ![1_ycwr_uE8_5lnOMNCnFOuXQ](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/855c6533-e7f9-4933-bd6e-4b7627ae8f27)
 
-The Classifier Chain strategy was applied to perform sentiment analysis in this project. The approach combines multiple binary classifiers into a single model, taking into account the correlations between the target variables. The original sentiment labels and the extracted emotions were combined, and a Logistic Regression classifier was used as the base model. The Classifier Chain model was trained on the combined data and used to predict sentiment and emotions for the test data. Evaluation metrics can be computed to assess the model's performance. The strategy allows for leveraging the relationships between sentiment and emotions in sentiment analysis tasks.
+In the Classifier Chain strategy applied in this project, the base classifier used is the RandomForestClassifier with a random_state of 42. The Classifier Chain combines multiple binary classifiers into a single model, considering the dependencies between the target variables. The sentiment labels and extracted emotions were combined, and the RandomForestClassifier was utilized as the base model. The chain classifier was trained on the combined data and used for predictions and evaluation. This approach allows for leveraging the correlations between sentiment and emotions in sentiment analysis tasks.
+
 
 
 
