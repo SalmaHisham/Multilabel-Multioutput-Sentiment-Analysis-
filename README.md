@@ -47,7 +47,7 @@ The following plotting shows the emotions after doing K-means Clustering
 ![Screenshot from 2024-01-17 12-19-10](https://github.com/SalmaHisham/Multilabel-Multioutput-Sentiment-Analysis-/assets/48545560/7a78f281-211c-438a-9e97-2e6da828c117)
 
 
-## Model Steps
+## Model Stage
 
 In this project, we employed a multi-label multi-output classification approach. Our predicted labels are:
 
